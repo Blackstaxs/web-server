@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Room</title>
+		<style>
+			#status {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+			}
+			
+			body{
+			background-image: url("https://bnetcmsus-a.akamaihd.net/cms/blog_header/3p/3PZKU3PEJCMQ1472515883268.gif");
+		}
+		#header1 {
+			color: firebrick;
+			font-size: 3vh;
+		}
+		
+
+		
+		.inpouts {
+			height: 3vh;
+			width: 10vw;
+			
+			color: darkblue;
+			font-style: oblique;
+		}
+		
+		.buttons {
+			height: 3vh;
+			width: 10vw;
+			
+			background-color: darkorange;
+		}
+		</style>
+	</head>
+	
+	<body>
+		<input type="text" id="msg" />
+		<button id="send">Send</button>
+		<div id="display"></div>
+		<div id="status"></div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/scripts/roombundle.js"></script>
+
+		/*<script>
+		
+		var socket = io();
+			
+		document.getElementById("send").addEventListener("click", function(){
+			
+			
+			
+			var obj = {
+				msg: document.getElementById("msg").value
+			};
+			
+			
+			
+			socket.emit("send message", obj);
+		});
+			
+			//
+		socket.on("create message", function(obj){
+			
+			console.log(obj);
+			
+			
+			var ndiv = document.createElement("div");
+			ndiv.innerHTML = obj.msg;
+			ndiv.style.color = "#0FEBE4";
+			
+			
+			document.getElementById("display").appendChild(ndiv);
+			
+		})
+		</script>*/
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Profile creation</title>
+	</head>
+	
+	<style>
+		body{
+			background-image: url("https://bnetcmsus-a.akamaihd.net/cms/blog_header/nh/NHKOZOYGDUQQ1463719364199.jpg");
+		}
+		#header1 {
+			color: firebrick;
+			font-size: 3vh;
+		}
+		
+
+		
+		.inpouts {
+			height: 3vh;
+			width: 10vw;
+			
+			color: darkblue;
+			font-style: oblique;
+		}
+		
+		.buttons {
+			height: 3vh;
+			width: 10vw;
+			
+			background-color: darkorange;
+		}
+		
+	
+	
+	</style>
+	
+	<body>
+		<h6 id="header1">Welcome to the Overwatch forum!</h6>
+		
+		<input id="username" class="inputs" placeholder="Please enter a username">
+		<input id="userimage" class="inputs" placeholder="Please enter a link">
+		<input id="usergender" class="inputs" placeholder="male/female">
+		
+		<button id="save" class="buttons">SAVE</button>
+		<button id="back" class="buttons">BACK</button>
+	
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/scripts/profilebundle.js"></script>
+		
+	</body>
+
+
+</html>

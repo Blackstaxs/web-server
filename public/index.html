@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>REST VS SOCKETS</title>
+	</head>
+	<style>
+			#status {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+			}
+			
+			body{
+			background-image: url("https://cdna.artstation.com/p/assets/images/images/003/953/424/original/brendan-sullivan-overwatch-brendansullivan-small.gif?1478864271");
+		}
+		#header1 {
+			color: firebrick;
+			font-size: 3vh;
+		}
+		
+
+		
+		.inpouts {
+			height: 3vh;
+			width: 10vw;
+			
+			color: darkblue;
+			font-style: oblique;
+		}
+		
+		.buttons {
+			height: 3vh;
+			width: 10vw;
+			
+			background-color: darkorange;
+		}
+		</style>
+	<body>
+		<button id="create">Create</button>
+		<button id="view">View current topics</button>
+		<input type="text" placeholder="Topic Name" id="room" />
+		<input type="text" placeholder="Topic Description" id="description" />
+		<input type="text" placeholder="Category: opinion/question/help" id="category" />
+		
+		<button id="back">BACK</button>
+		
+		<div id="allRooms"></div>
+		<script src="/scripts/indexbundle.js"></script>
+	</body>
+
+
+</html>
